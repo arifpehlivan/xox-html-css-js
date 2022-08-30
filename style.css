@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, #3c8ce7, #00eaff);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 500;
+}
+
+h1,
+h2 {
+    margin-bottom: 1em;
+    color: white;
+}
+
+.container {
+    width: 450px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.box:hover {
+    color: black;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3) {
+    border-top: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(4),
+.box:nth-child(7) {
+    border-left: none;
+}
+
+.box:nth-child(3),
+.box:nth-child(6),
+.box:nth-child(9) {
+    border-right: none;
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9) {
+    border-bottom: none;
+}
+
+.message {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: red;
+    display: none;
+    font-size: 20px;
+}
+
+#player {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    transition: 1s;
+}
